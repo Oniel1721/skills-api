@@ -13,6 +13,7 @@ module.exports = {
   env: {
     node: true,
     jest: true,
+    es6: true
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
@@ -20,5 +21,12 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-  },
+    "no-undef": 2,
+    "no-cond-assign": 2,
+    "no-unreachable": 1,
+    "no-empty": 1,
+    "no-eval": 1,
+    "no-unused-vars": 1,
+    "no-use-before-define": 1
+  }
 };
